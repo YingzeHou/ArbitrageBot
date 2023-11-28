@@ -1,0 +1,90 @@
+{
+    "WETH": {
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "decimal": 18
+    },
+    "USDT": {
+        "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+        "decimal": 6
+    },
+    "WBTC": {
+        "address": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+        "decimal": 8
+    },
+    "SAI": {
+        "address": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+        "decimal": 18
+    },
+    "BNT": {
+        "address": "0x1f573d6fb3f13d689ff844b4ce37794d79a7ff1c",
+        "decimal": 18
+    },
+    "DAI": {
+        "address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+        "decimal": 18
+    },
+    "BAT": {
+        "address": "0x0d8775f648430679a709e98d2b0cb6250d2887ef",
+        "decimal": 18
+    },
+    "ENJ": {
+        "address": "0xf629cbd94d3791c9250152bd8dfbdf380e2a3b9c",
+        "decimal": 18
+    },
+    "SNT": {
+        "address": "0x744d70fdbe2ba4cf95131626614a1763df805b9e",
+        "decimal": 18
+    },
+    "MKR": {
+        "address": "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2",
+        "decimal": 18
+    },
+    "DATA": {
+        "address": "0x0cf0ee63788a0849fe5297f3407f701e122cc023",
+        "decimal": 18
+    },
+    "MANA": {
+        "address": "0x0f5d2fb29fb7d3cfee444a200298f468908cc942",
+        "decimal": 18
+    },
+    "RLC": {
+        "address": "0x607f4c5bb672230e8672085532f7e901544a7375",
+        "decimal": 9
+    },
+    "RCN": {
+        "address": "0xf970b8e36e23f7fc3fd752eea86f8be8d83375a6",
+        "decimal": 18
+    },
+    "UBT": {
+        "address": "0x8400d94a5cb0fa0d041a3788e395285d61c9ee5e",
+        "decimal": 8
+    },
+    "GNO": {
+        "address": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+        "decimal": 18
+    },
+    "RDN": {
+        "address": "0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6",
+        "decimal": 18
+    },
+    "TKN": {
+        "address": "0xaaaf91d9b90df800df4f55c205fd6989c977e73a",
+        "decimal": 8
+    },
+    "AMN": {
+        "address": "0x737f98ac8ca59f2c68ad658e3c3d8c8963e40a4c",
+        "decimal": 18
+    },
+    "FXC": {
+        "address": "0x4a57e687b9126435a9b19e4a802113e266adebde",
+        "decimal": 18
+    },
+    "AMPL": {
+        "address": "0xd46ba6d942050d489dbd938a2c909a5d5039a161",
+        "decimal": 9
+    },
+    "POA20": {
+        "address": "0x6758b7d441a9739b98552b373703d8d3d14f9e62",
+        "decimal": 18
+    }
+}

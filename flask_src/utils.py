@@ -1,6 +1,17 @@
 import requests
 import networkx as nx
 import numpy as np
+import os
+from dotenv import load_dotenv
+import json
+import time
+from tqdm import tqdm
+
+# Load environment variables from .env file
+load_dotenv()
+
+arbitrage_path = None
+arbitrage_ratio = None
 
 def get_spot_price(asset_from, asset_to, state):
     """
@@ -13,13 +24,12 @@ def get_spot_price(asset_from, asset_to, state):
     """
     return state.get((asset_from, asset_to), 1)
 
-def calculate_revenue(path, G, state):
+def calculate_revenue(path, G):
     """
     Calculate the revenue from executing trades along a given path.
 
     :param path: The arbitrage path.
     :param G: The graph representing market pairs.
-    :param state: The current market state.
     :return: The total revenue from executing the arbitrage path.
     """
     revenue = 0
@@ -85,7 +95,7 @@ def find_all_cycles(G, source, path=[], visited=set()):
             visited.remove(neighbor)
     return cycles
 
-def get_negative_cycle(G):
+def get_negative_cycle(G, node):
     """
     Detect a negative cycle in the graph.
 
@@ -94,25 +104,23 @@ def get_negative_cycle(G):
     """
     cycle_dict = {}
 
-    for node in G.nodes():
-        best_cycle = None
-        best_weight = 0
-        if node not in cycle_dict:
-            cycle_dict[node] = None
+    # for node in G.nodes():
+    best_cycle = None
+    best_weight = 0
+    if node not in cycle_dict:
+        cycle_dict[node] = None
 
-        cycles = find_all_cycles(G, node)
-        for cycle in cycles:
-            weight = sum(G[cycle[i]][cycle[i+1]]['weight'] for i in range(len(cycle)-1))
-            if weight < best_weight:
-                best_cycle = cycle
-                best_weight = weight
+    cycles = find_all_cycles(G, node)
+    for cycle in cycles:
+        weight = sum(G[cycle[i]][cycle[i+1]]['weight'] for i in range(len(cycle)-1))
+        if weight < best_weight:
+            best_cycle = cycle
+            best_weight = weight
 
-        cycle_dict[node] = best_cycle
-
-    print(cycle_dict)
+    cycle_dict[node] = best_cycle
     return cycle_dict
 
-def negative_cycle_arbitrage_detection(N, E, state):
+def negative_cycle_arbitrage_detection(N, E, state, node):
     """
     Main function to detect and exploit negative cycle arbitrage opportunities.
 
@@ -123,46 +131,80 @@ def negative_cycle_arbitrage_detection(N, E, state):
     """
     exchange_dict = {}
     G = build_graph(N, E, state)
-    cycle_dict = get_negative_cycle(G)
+    cycle_dict = get_negative_cycle(G, node)
     
+    best_path = []
     for src in cycle_dict:
         if src[0] not in exchange_dict:
             exchange_dict[src] = 1
 
         path = convert_cycle_to_path(cycle_dict[src])
-        revenue, ratio = calculate_revenue(path, G, state)
+        revenue, ratio = calculate_revenue(path, G)
         print(f'{path} ratio: {ratio}')
         if ratio>exchange_dict[src]:
             exchange_dict[src] = ratio
+            best_path = path
 
-    return exchange_dict
+    return exchange_dict, best_path
 
-def fetch_1inch_exchange_prices(from_token, to_token, api_key):
+def fetch_price(from_token, to_token, api_key, token_dict):
     base_url = "https://api.1inch.dev/swap/v5.2/1/quote"
-    headers = {
-        'accept': 'application/json',
-        'Authorization': f'Bearer {api_key}'
-    }
+    headers = {'accept': 'application/json', 'Authorization': f'Bearer {api_key}'}
+
     params = {
-        "src": from_token,
-        "dst": to_token,
-        "amount": 10**6,  # Example amount, typically 1 token
+        "src": token_dict[from_token]['address'],
+        "dst": token_dict[to_token]['address'],
+        "amount": 1*10**int(token_dict[from_token]['decimal']),  # Example amount, typically 1 token
         "includeTokensInfo": True,
         "includeGas": True
     }
+
     try:
         response = requests.get(base_url, headers=headers, params=params)
         data = response.json()
-        print(data)
-        if 'toAmount' in data:
-            return int(data['toAmount']) / 10**18
-    except requests.exceptions.RequestException as e:
-        print(f"Error fetching price for pair {from_token} - {to_token}: {e}")
+        return (from_token, to_token), (int(data['toAmount']) / (1*10**int(token_dict[to_token]['decimal'])))
+    except Exception as e:
+        print(f"Error with pair {from_token}-{to_token}: {e}")
         return None
+    
+def fetch_all_prices(token_pairs, api_key, token_dict):
+    results = {}
+    for i in tqdm(range(len(token_pairs))):
+        time.sleep(1)
+        pair = token_pairs[i]
+        curr_dex, curr_price = fetch_price(pair['token1_symbol'], pair['token2_symbol'], api_key, token_dict)
+        results[curr_dex] = curr_price
+    return results
+
+def find_arbitrage_opportunity(token_to_arbitrage):
+    global arbitrage_path, arbitrage_ratio
+    if arbitrage_path != None:
+        return arbitrage_path, arbitrage_ratio
+    api_key = os.getenv('ONEINCH_PRIVATE_KEY')  # Replace with your actual API key
+    if not api_key:
+        raise ValueError("Private key not set in .env file")
+    
+    tokens = json.load(open('./data/erc20_tokens.json'))
+    pairs =  json.load(open('./data/token_pairs.json'))
+
+    N = []
+    for token in tokens:
+        N.append(token)
+    
+    E = []
+    for pair in pairs:
+        E.append((pair['token1_symbol'], pair['token2_symbol']))
+
+    initial_state = fetch_all_prices(pairs, api_key, tokens)
+    print(initial_state)
+    exchange_dict, best_path = negative_cycle_arbitrage_detection(N, E, initial_state, token_to_arbitrage)
+    arbitrage_path = best_path
+    arbitrage_ratio =  exchange_dict[token_to_arbitrage]
+    # best_path = ['WETH', 'TKN', 'BNT', 'AMN', 'WETH']
+    # ratio = 7.4127782714447585
+    return best_path, exchange_dict[token_to_arbitrage]
+
 
 if __name__ == '__main__':
-    N = ['USD', 'EUR', 'JPY', 'CNY']  # Example set of assets
-    E = [('USD', 'EUR'), ('USD', 'CNY'), ('EUR', 'JPY'), ('CNY', 'JPY'), ('JPY', 'USD')]  # Example set of market pairs
-    state = {('USD', 'EUR'): 0.9, ('USD', 'CNY'): 7.29, ('EUR', 'JPY'): 162, ('CNY', 'JPY'): 20.8, ('JPY', 'USD'): 0.008}  # Initial state (mock values)
-    exchange_dict = negative_cycle_arbitrage_detection(N, E, state, 0)
-    print(exchange_dict)
+    best_path, exchange_ratio = find_arbitrage_opportunity('WETH')
+    print(best_path, exchange_ratio)
