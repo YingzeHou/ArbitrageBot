@@ -9,7 +9,7 @@ async function main() {
   const arbitrageOperator = await ethers.deployContract("ArbitrageOperator");
 
   // Wait for deployment to finish
-  await arbitrageOperator.waitForDeployment();
+  await arbitrageOperator.deployed();
 
   console.log("MyContract deployed to:", arbitrageOperator.address);
 }

@@ -1,0 +1,1482 @@
+[
+    {
+        "pair": "UETH-ULCK",
+        "token1_symbol": "UETH",
+        "token2_symbol": "ULCK"
+    },
+    {
+        "pair": "ULCK-UETH",
+        "token1_symbol": "ULCK",
+        "token2_symbol": "UETH"
+    },
+    {
+        "pair": "WISE-WETH",
+        "token1_symbol": "WISE",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-WISE",
+        "token1_symbol": "WETH",
+        "token2_symbol": "WISE"
+    },
+    {
+        "pair": "WETH-USDT",
+        "token1_symbol": "WETH",
+        "token2_symbol": "USDT"
+    },
+    {
+        "pair": "USDT-WETH",
+        "token1_symbol": "USDT",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "USDC-WETH",
+        "token1_symbol": "USDC",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-USDC",
+        "token1_symbol": "WETH",
+        "token2_symbol": "USDC"
+    },
+    {
+        "pair": "DELTA-WETH",
+        "token1_symbol": "DELTA",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-DELTA",
+        "token1_symbol": "WETH",
+        "token2_symbol": "DELTA"
+    },
+    {
+        "pair": "FNK-USDT",
+        "token1_symbol": "FNK",
+        "token2_symbol": "USDT"
+    },
+    {
+        "pair": "USDT-FNK",
+        "token1_symbol": "USDT",
+        "token2_symbol": "FNK"
+    },
+    {
+        "pair": "RK:ETH-ROOT",
+        "token1_symbol": "RK:ETH",
+        "token2_symbol": "ROOT"
+    },
+    {
+        "pair": "ROOT-RK:ETH",
+        "token1_symbol": "ROOT",
+        "token2_symbol": "RK:ETH"
+    },
+    {
+        "pair": "USDC-USDT",
+        "token1_symbol": "USDC",
+        "token2_symbol": "USDT"
+    },
+    {
+        "pair": "USDT-USDC",
+        "token1_symbol": "USDT",
+        "token2_symbol": "USDC"
+    },
+    {
+        "pair": "DAI-USDC",
+        "token1_symbol": "DAI",
+        "token2_symbol": "USDC"
+    },
+    {
+        "pair": "USDC-DAI",
+        "token1_symbol": "USDC",
+        "token2_symbol": "DAI"
+    },
+    {
+        "pair": "ETH2POS-DC",
+        "token1_symbol": "ETH2POS",
+        "token2_symbol": "DC"
+    },
+    {
+        "pair": "DC-ETH2POS",
+        "token1_symbol": "DC",
+        "token2_symbol": "ETH2POS"
+    },
+    {
+        "pair": "M2-wPE",
+        "token1_symbol": "M2",
+        "token2_symbol": "wPE"
+    },
+    {
+        "pair": "wPE-M2",
+        "token1_symbol": "wPE",
+        "token2_symbol": "M2"
+    },
+    {
+        "pair": "DAI-WETH",
+        "token1_symbol": "DAI",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-DAI",
+        "token1_symbol": "WETH",
+        "token2_symbol": "DAI"
+    },
+    {
+        "pair": "HANU-GOJ",
+        "token1_symbol": "HANU",
+        "token2_symbol": "GOJ"
+    },
+    {
+        "pair": "GOJ-HANU",
+        "token1_symbol": "GOJ",
+        "token2_symbol": "HANU"
+    },
+    {
+        "pair": "DBL-BLUE",
+        "token1_symbol": "DBL",
+        "token2_symbol": "BLUE"
+    },
+    {
+        "pair": "BLUE-DBL",
+        "token1_symbol": "BLUE",
+        "token2_symbol": "DBL"
+    },
+    {
+        "pair": "HANU-MIA",
+        "token1_symbol": "HANU",
+        "token2_symbol": "MIA"
+    },
+    {
+        "pair": "MIA-HANU",
+        "token1_symbol": "MIA",
+        "token2_symbol": "HANU"
+    },
+    {
+        "pair": "FXS-FRAX",
+        "token1_symbol": "FXS",
+        "token2_symbol": "FRAX"
+    },
+    {
+        "pair": "FRAX-FXS",
+        "token1_symbol": "FRAX",
+        "token2_symbol": "FXS"
+    },
+    {
+        "pair": "XXi-WETH",
+        "token1_symbol": "XXi",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-XXi",
+        "token1_symbol": "WETH",
+        "token2_symbol": "XXi"
+    },
+    {
+        "pair": "MC-WETH",
+        "token1_symbol": "MC",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-MC",
+        "token1_symbol": "WETH",
+        "token2_symbol": "MC"
+    },
+    {
+        "pair": "BHNY-wPE",
+        "token1_symbol": "BHNY",
+        "token2_symbol": "wPE"
+    },
+    {
+        "pair": "wPE-BHNY",
+        "token1_symbol": "wPE",
+        "token2_symbol": "BHNY"
+    },
+    {
+        "pair": "vUSD-VOW",
+        "token1_symbol": "vUSD",
+        "token2_symbol": "VOW"
+    },
+    {
+        "pair": "VOW-vUSD",
+        "token1_symbol": "VOW",
+        "token2_symbol": "vUSD"
+    },
+    {
+        "pair": "PEPE-WETH",
+        "token1_symbol": "PEPE",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-PEPE",
+        "token1_symbol": "WETH",
+        "token2_symbol": "PEPE"
+    },
+    {
+        "pair": "UNI-WETH",
+        "token1_symbol": "UNI",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-UNI",
+        "token1_symbol": "WETH",
+        "token2_symbol": "UNI"
+    },
+    {
+        "pair": "WETH-CAW",
+        "token1_symbol": "WETH",
+        "token2_symbol": "CAW"
+    },
+    {
+        "pair": "CAW-WETH",
+        "token1_symbol": "CAW",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "ELON-WETH",
+        "token1_symbol": "ELON",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-ELON",
+        "token1_symbol": "WETH",
+        "token2_symbol": "ELON"
+    },
+    {
+        "pair": "WBTC-WETH",
+        "token1_symbol": "WBTC",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-WBTC",
+        "token1_symbol": "WETH",
+        "token2_symbol": "WBTC"
+    },
+    {
+        "pair": "FEI-TRIBE",
+        "token1_symbol": "FEI",
+        "token2_symbol": "TRIBE"
+    },
+    {
+        "pair": "TRIBE-FEI",
+        "token1_symbol": "TRIBE",
+        "token2_symbol": "FEI"
+    },
+    {
+        "pair": "BigSB-USDC",
+        "token1_symbol": "BigSB",
+        "token2_symbol": "USDC"
+    },
+    {
+        "pair": "USDC-BigSB",
+        "token1_symbol": "USDC",
+        "token2_symbol": "BigSB"
+    },
+    {
+        "pair": "PAXG-WETH",
+        "token1_symbol": "PAXG",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-PAXG",
+        "token1_symbol": "WETH",
+        "token2_symbol": "PAXG"
+    },
+    {
+        "pair": "WETH-SUPER",
+        "token1_symbol": "WETH",
+        "token2_symbol": "SUPER"
+    },
+    {
+        "pair": "SUPER-WETH",
+        "token1_symbol": "SUPER",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WAXE-WETH",
+        "token1_symbol": "WAXE",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-WAXE",
+        "token1_symbol": "WETH",
+        "token2_symbol": "WAXE"
+    },
+    {
+        "pair": "WETH-FLOKI",
+        "token1_symbol": "WETH",
+        "token2_symbol": "FLOKI"
+    },
+    {
+        "pair": "FLOKI-WETH",
+        "token1_symbol": "FLOKI",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "UETH-DAPE",
+        "token1_symbol": "UETH",
+        "token2_symbol": "DAPE"
+    },
+    {
+        "pair": "DAPE-UETH",
+        "token1_symbol": "DAPE",
+        "token2_symbol": "UETH"
+    },
+    {
+        "pair": "ULS-UETH",
+        "token1_symbol": "ULS",
+        "token2_symbol": "UETH"
+    },
+    {
+        "pair": "UETH-ULS",
+        "token1_symbol": "UETH",
+        "token2_symbol": "ULS"
+    },
+    {
+        "pair": "eXRD-USDC",
+        "token1_symbol": "eXRD",
+        "token2_symbol": "USDC"
+    },
+    {
+        "pair": "USDC-eXRD",
+        "token1_symbol": "USDC",
+        "token2_symbol": "eXRD"
+    },
+    {
+        "pair": "WETH-BTT",
+        "token1_symbol": "WETH",
+        "token2_symbol": "BTT"
+    },
+    {
+        "pair": "BTT-WETH",
+        "token1_symbol": "BTT",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-DEXT",
+        "token1_symbol": "WETH",
+        "token2_symbol": "DEXT"
+    },
+    {
+        "pair": "DEXT-WETH",
+        "token1_symbol": "DEXT",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WOO-WETH",
+        "token1_symbol": "WOO",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-WOO",
+        "token1_symbol": "WETH",
+        "token2_symbol": "WOO"
+    },
+    {
+        "pair": "RAD-USDC",
+        "token1_symbol": "RAD",
+        "token2_symbol": "USDC"
+    },
+    {
+        "pair": "USDC-RAD",
+        "token1_symbol": "USDC",
+        "token2_symbol": "RAD"
+    },
+    {
+        "pair": "stETH-WETH",
+        "token1_symbol": "stETH",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-stETH",
+        "token1_symbol": "WETH",
+        "token2_symbol": "stETH"
+    },
+    {
+        "pair": "UFO-WETH",
+        "token1_symbol": "UFO",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-UFO",
+        "token1_symbol": "WETH",
+        "token2_symbol": "UFO"
+    },
+    {
+        "pair": "PAXG-USDC",
+        "token1_symbol": "PAXG",
+        "token2_symbol": "USDC"
+    },
+    {
+        "pair": "USDC-PAXG",
+        "token1_symbol": "USDC",
+        "token2_symbol": "PAXG"
+    },
+    {
+        "pair": "WETH-FOX",
+        "token1_symbol": "WETH",
+        "token2_symbol": "FOX"
+    },
+    {
+        "pair": "FOX-WETH",
+        "token1_symbol": "FOX",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "scUSD-USDC",
+        "token1_symbol": "scUSD",
+        "token2_symbol": "USDC"
+    },
+    {
+        "pair": "USDC-scUSD",
+        "token1_symbol": "USDC",
+        "token2_symbol": "scUSD"
+    },
+    {
+        "pair": "ASTO-USDC",
+        "token1_symbol": "ASTO",
+        "token2_symbol": "USDC"
+    },
+    {
+        "pair": "USDC-ASTO",
+        "token1_symbol": "USDC",
+        "token2_symbol": "ASTO"
+    },
+    {
+        "pair": "ERN-WETH",
+        "token1_symbol": "ERN",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-ERN",
+        "token1_symbol": "WETH",
+        "token2_symbol": "ERN"
+    },
+    {
+        "pair": "USDT-HEZ",
+        "token1_symbol": "USDT",
+        "token2_symbol": "HEZ"
+    },
+    {
+        "pair": "HEZ-USDT",
+        "token1_symbol": "HEZ",
+        "token2_symbol": "USDT"
+    },
+    {
+        "pair": "WETH-SAITAMA",
+        "token1_symbol": "WETH",
+        "token2_symbol": "SAITAMA"
+    },
+    {
+        "pair": "SAITAMA-WETH",
+        "token1_symbol": "SAITAMA",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "USDC-scUSD",
+        "token1_symbol": "USDC",
+        "token2_symbol": "scUSD"
+    },
+    {
+        "pair": "scUSD-USDC",
+        "token1_symbol": "scUSD",
+        "token2_symbol": "USDC"
+    },
+    {
+        "pair": "WETH-SFTX",
+        "token1_symbol": "WETH",
+        "token2_symbol": "SFTX"
+    },
+    {
+        "pair": "SFTX-WETH",
+        "token1_symbol": "SFTX",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "PNK-WETH",
+        "token1_symbol": "PNK",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-PNK",
+        "token1_symbol": "WETH",
+        "token2_symbol": "PNK"
+    },
+    {
+        "pair": "ShibDoge-WETH",
+        "token1_symbol": "ShibDoge",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-ShibDoge",
+        "token1_symbol": "WETH",
+        "token2_symbol": "ShibDoge"
+    },
+    {
+        "pair": "XFIT-USDT",
+        "token1_symbol": "XFIT",
+        "token2_symbol": "USDT"
+    },
+    {
+        "pair": "USDT-XFIT",
+        "token1_symbol": "USDT",
+        "token2_symbol": "XFIT"
+    },
+    {
+        "pair": "WETH-CULT",
+        "token1_symbol": "WETH",
+        "token2_symbol": "CULT"
+    },
+    {
+        "pair": "CULT-WETH",
+        "token1_symbol": "CULT",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "USDC-JAY",
+        "token1_symbol": "USDC",
+        "token2_symbol": "JAY"
+    },
+    {
+        "pair": "JAY-USDC",
+        "token1_symbol": "JAY",
+        "token2_symbol": "USDC"
+    },
+    {
+        "pair": "DAI-O",
+        "token1_symbol": "DAI",
+        "token2_symbol": "O"
+    },
+    {
+        "pair": "O-DAI",
+        "token1_symbol": "O",
+        "token2_symbol": "DAI"
+    },
+    {
+        "pair": "WETH-AMPL",
+        "token1_symbol": "WETH",
+        "token2_symbol": "AMPL"
+    },
+    {
+        "pair": "AMPL-WETH",
+        "token1_symbol": "AMPL",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WILD-WETH",
+        "token1_symbol": "WILD",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-WILD",
+        "token1_symbol": "WETH",
+        "token2_symbol": "WILD"
+    },
+    {
+        "pair": "QOM-WETH",
+        "token1_symbol": "QOM",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-QOM",
+        "token1_symbol": "WETH",
+        "token2_symbol": "QOM"
+    },
+    {
+        "pair": "UETH-ROOT",
+        "token1_symbol": "UETH",
+        "token2_symbol": "ROOT"
+    },
+    {
+        "pair": "ROOT-UETH",
+        "token1_symbol": "ROOT",
+        "token2_symbol": "UETH"
+    },
+    {
+        "pair": "VOLT-WETH",
+        "token1_symbol": "VOLT",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-VOLT",
+        "token1_symbol": "WETH",
+        "token2_symbol": "VOLT"
+    },
+    {
+        "pair": "X2Y2-WETH",
+        "token1_symbol": "X2Y2",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-X2Y2",
+        "token1_symbol": "WETH",
+        "token2_symbol": "X2Y2"
+    },
+    {
+        "pair": "SWFL-WETH",
+        "token1_symbol": "SWFL",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-SWFL",
+        "token1_symbol": "WETH",
+        "token2_symbol": "SWFL"
+    },
+    {
+        "pair": "STARL-WETH",
+        "token1_symbol": "STARL",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-STARL",
+        "token1_symbol": "WETH",
+        "token2_symbol": "STARL"
+    },
+    {
+        "pair": "AUDIO-WETH",
+        "token1_symbol": "AUDIO",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-AUDIO",
+        "token1_symbol": "WETH",
+        "token2_symbol": "AUDIO"
+    },
+    {
+        "pair": "XFI-WETH",
+        "token1_symbol": "XFI",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-XFI",
+        "token1_symbol": "WETH",
+        "token2_symbol": "XFI"
+    },
+    {
+        "pair": "LON-WETH",
+        "token1_symbol": "LON",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-LON",
+        "token1_symbol": "WETH",
+        "token2_symbol": "LON"
+    },
+    {
+        "pair": "FLUT-DAI",
+        "token1_symbol": "FLUT",
+        "token2_symbol": "DAI"
+    },
+    {
+        "pair": "DAI-FLUT",
+        "token1_symbol": "DAI",
+        "token2_symbol": "FLUT"
+    },
+    {
+        "pair": "GF-WETH",
+        "token1_symbol": "GF",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-GF",
+        "token1_symbol": "WETH",
+        "token2_symbol": "GF"
+    },
+    {
+        "pair": "$MONG-WETH",
+        "token1_symbol": "$MONG",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-$MONG",
+        "token1_symbol": "WETH",
+        "token2_symbol": "$MONG"
+    },
+    {
+        "pair": "SNAIL-WETH",
+        "token1_symbol": "SNAIL",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-SNAIL",
+        "token1_symbol": "WETH",
+        "token2_symbol": "SNAIL"
+    },
+    {
+        "pair": "ANT-WETH",
+        "token1_symbol": "ANT",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-ANT",
+        "token1_symbol": "WETH",
+        "token2_symbol": "ANT"
+    },
+    {
+        "pair": "DOGE-USDT",
+        "token1_symbol": "DOGE",
+        "token2_symbol": "USDT"
+    },
+    {
+        "pair": "USDT-DOGE",
+        "token1_symbol": "USDT",
+        "token2_symbol": "DOGE"
+    },
+    {
+        "pair": "BOTTO-WETH",
+        "token1_symbol": "BOTTO",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-BOTTO",
+        "token1_symbol": "WETH",
+        "token2_symbol": "BOTTO"
+    },
+    {
+        "pair": "0x0-WETH",
+        "token1_symbol": "0x0",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-0x0",
+        "token1_symbol": "WETH",
+        "token2_symbol": "0x0"
+    },
+    {
+        "pair": "WDOGE-WETH",
+        "token1_symbol": "WDOGE",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-WDOGE",
+        "token1_symbol": "WETH",
+        "token2_symbol": "WDOGE"
+    },
+    {
+        "pair": "DOGE-WETH",
+        "token1_symbol": "DOGE",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-DOGE",
+        "token1_symbol": "WETH",
+        "token2_symbol": "DOGE"
+    },
+    {
+        "pair": "POLS-WETH",
+        "token1_symbol": "POLS",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-POLS",
+        "token1_symbol": "WETH",
+        "token2_symbol": "POLS"
+    },
+    {
+        "pair": "BOB-WETH",
+        "token1_symbol": "BOB",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-BOB",
+        "token1_symbol": "WETH",
+        "token2_symbol": "BOB"
+    },
+    {
+        "pair": "WETH-DETS",
+        "token1_symbol": "WETH",
+        "token2_symbol": "DETS"
+    },
+    {
+        "pair": "DETS-WETH",
+        "token1_symbol": "DETS",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-ROOK",
+        "token1_symbol": "WETH",
+        "token2_symbol": "ROOK"
+    },
+    {
+        "pair": "ROOK-WETH",
+        "token1_symbol": "ROOK",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "KOO-WETH",
+        "token1_symbol": "KOO",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-KOO",
+        "token1_symbol": "WETH",
+        "token2_symbol": "KOO"
+    },
+    {
+        "pair": "KDOE-WETH",
+        "token1_symbol": "KDOE",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-KDOE",
+        "token1_symbol": "WETH",
+        "token2_symbol": "KDOE"
+    },
+    {
+        "pair": "LFT-WETH",
+        "token1_symbol": "LFT",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-LFT",
+        "token1_symbol": "WETH",
+        "token2_symbol": "LFT"
+    },
+    {
+        "pair": "USDC-TSUKA",
+        "token1_symbol": "USDC",
+        "token2_symbol": "TSUKA"
+    },
+    {
+        "pair": "TSUKA-USDC",
+        "token1_symbol": "TSUKA",
+        "token2_symbol": "USDC"
+    },
+    {
+        "pair": "LADYS-WETH",
+        "token1_symbol": "LADYS",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-LADYS",
+        "token1_symbol": "WETH",
+        "token2_symbol": "LADYS"
+    },
+    {
+        "pair": "imgnAI-WETH",
+        "token1_symbol": "imgnAI",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-imgnAI",
+        "token1_symbol": "WETH",
+        "token2_symbol": "imgnAI"
+    },
+    {
+        "pair": "WOJAK-WETH",
+        "token1_symbol": "WOJAK",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-WOJAK",
+        "token1_symbol": "WETH",
+        "token2_symbol": "WOJAK"
+    },
+    {
+        "pair": "DFI-WETH",
+        "token1_symbol": "DFI",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-DFI",
+        "token1_symbol": "WETH",
+        "token2_symbol": "DFI"
+    },
+    {
+        "pair": "\u2697\ufe0f-WETH",
+        "token1_symbol": "\u2697\ufe0f",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-\u2697\ufe0f",
+        "token1_symbol": "WETH",
+        "token2_symbol": "\u2697\ufe0f"
+    },
+    {
+        "pair": "EVN-WETH",
+        "token1_symbol": "EVN",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-EVN",
+        "token1_symbol": "WETH",
+        "token2_symbol": "EVN"
+    },
+    {
+        "pair": "LINK-WETH",
+        "token1_symbol": "LINK",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-LINK",
+        "token1_symbol": "WETH",
+        "token2_symbol": "LINK"
+    },
+    {
+        "pair": "DJ15-WETH",
+        "token1_symbol": "DJ15",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-DJ15",
+        "token1_symbol": "WETH",
+        "token2_symbol": "DJ15"
+    },
+    {
+        "pair": "KAP-WETH",
+        "token1_symbol": "KAP",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-KAP",
+        "token1_symbol": "WETH",
+        "token2_symbol": "KAP"
+    },
+    {
+        "pair": "BEND-WETH",
+        "token1_symbol": "BEND",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-BEND",
+        "token1_symbol": "WETH",
+        "token2_symbol": "BEND"
+    },
+    {
+        "pair": "PKF-WETH",
+        "token1_symbol": "PKF",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-PKF",
+        "token1_symbol": "WETH",
+        "token2_symbol": "PKF"
+    },
+    {
+        "pair": "WETH-LBR",
+        "token1_symbol": "WETH",
+        "token2_symbol": "LBR"
+    },
+    {
+        "pair": "LBR-WETH",
+        "token1_symbol": "LBR",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "FOUR-WETH",
+        "token1_symbol": "FOUR",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-FOUR",
+        "token1_symbol": "WETH",
+        "token2_symbol": "FOUR"
+    },
+    {
+        "pair": "MASK-USDC",
+        "token1_symbol": "MASK",
+        "token2_symbol": "USDC"
+    },
+    {
+        "pair": "USDC-MASK",
+        "token1_symbol": "USDC",
+        "token2_symbol": "MASK"
+    },
+    {
+        "pair": "KISHU-WETH",
+        "token1_symbol": "KISHU",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-KISHU",
+        "token1_symbol": "WETH",
+        "token2_symbol": "KISHU"
+    },
+    {
+        "pair": "FILST-USDT",
+        "token1_symbol": "FILST",
+        "token2_symbol": "USDT"
+    },
+    {
+        "pair": "USDT-FILST",
+        "token1_symbol": "USDT",
+        "token2_symbol": "FILST"
+    },
+    {
+        "pair": "WETH-PUSH",
+        "token1_symbol": "WETH",
+        "token2_symbol": "PUSH"
+    },
+    {
+        "pair": "PUSH-WETH",
+        "token1_symbol": "PUSH",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "DAO-USDC",
+        "token1_symbol": "DAO",
+        "token2_symbol": "USDC"
+    },
+    {
+        "pair": "USDC-DAO",
+        "token1_symbol": "USDC",
+        "token2_symbol": "DAO"
+    },
+    {
+        "pair": "DAI-BSG",
+        "token1_symbol": "DAI",
+        "token2_symbol": "BSG"
+    },
+    {
+        "pair": "BSG-DAI",
+        "token1_symbol": "BSG",
+        "token2_symbol": "DAI"
+    },
+    {
+        "pair": "UFT-WETH",
+        "token1_symbol": "UFT",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-UFT",
+        "token1_symbol": "WETH",
+        "token2_symbol": "UFT"
+    },
+    {
+        "pair": "DAI-HEZ",
+        "token1_symbol": "DAI",
+        "token2_symbol": "HEZ"
+    },
+    {
+        "pair": "HEZ-DAI",
+        "token1_symbol": "HEZ",
+        "token2_symbol": "DAI"
+    },
+    {
+        "pair": "SPOOL-DAI",
+        "token1_symbol": "SPOOL",
+        "token2_symbol": "DAI"
+    },
+    {
+        "pair": "DAI-SPOOL",
+        "token1_symbol": "DAI",
+        "token2_symbol": "SPOOL"
+    },
+    {
+        "pair": "Dione-WETH",
+        "token1_symbol": "Dione",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-Dione",
+        "token1_symbol": "WETH",
+        "token2_symbol": "Dione"
+    },
+    {
+        "pair": "REQ-WETH",
+        "token1_symbol": "REQ",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-REQ",
+        "token1_symbol": "WETH",
+        "token2_symbol": "REQ"
+    },
+    {
+        "pair": "CDS-WETH",
+        "token1_symbol": "CDS",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-CDS",
+        "token1_symbol": "WETH",
+        "token2_symbol": "CDS"
+    },
+    {
+        "pair": "CORE-WETH",
+        "token1_symbol": "CORE",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-CORE",
+        "token1_symbol": "WETH",
+        "token2_symbol": "CORE"
+    },
+    {
+        "pair": "ECO-USDC",
+        "token1_symbol": "ECO",
+        "token2_symbol": "USDC"
+    },
+    {
+        "pair": "USDC-ECO",
+        "token1_symbol": "USDC",
+        "token2_symbol": "ECO"
+    },
+    {
+        "pair": "WETH-HEZ",
+        "token1_symbol": "WETH",
+        "token2_symbol": "HEZ"
+    },
+    {
+        "pair": "HEZ-WETH",
+        "token1_symbol": "HEZ",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "BabyDoge-WETH",
+        "token1_symbol": "BabyDoge",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-BabyDoge",
+        "token1_symbol": "WETH",
+        "token2_symbol": "BabyDoge"
+    },
+    {
+        "pair": "WETH-GAIN",
+        "token1_symbol": "WETH",
+        "token2_symbol": "GAIN"
+    },
+    {
+        "pair": "GAIN-WETH",
+        "token1_symbol": "GAIN",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-QLINDO",
+        "token1_symbol": "WETH",
+        "token2_symbol": "QLINDO"
+    },
+    {
+        "pair": "QLINDO-WETH",
+        "token1_symbol": "QLINDO",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "ETHx-WETH",
+        "token1_symbol": "ETHx",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-ETHx",
+        "token1_symbol": "WETH",
+        "token2_symbol": "ETHx"
+    },
+    {
+        "pair": "WETH-wPE",
+        "token1_symbol": "WETH",
+        "token2_symbol": "wPE"
+    },
+    {
+        "pair": "wPE-WETH",
+        "token1_symbol": "wPE",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "RAI-WETH",
+        "token1_symbol": "RAI",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-RAI",
+        "token1_symbol": "WETH",
+        "token2_symbol": "RAI"
+    },
+    {
+        "pair": "SHARE-WETH",
+        "token1_symbol": "SHARE",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-SHARE",
+        "token1_symbol": "WETH",
+        "token2_symbol": "SHARE"
+    },
+    {
+        "pair": "WETH-URUS",
+        "token1_symbol": "WETH",
+        "token2_symbol": "URUS"
+    },
+    {
+        "pair": "URUS-WETH",
+        "token1_symbol": "URUS",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "SAND-WETH",
+        "token1_symbol": "SAND",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-SAND",
+        "token1_symbol": "WETH",
+        "token2_symbol": "SAND"
+    },
+    {
+        "pair": "EP-WETH",
+        "token1_symbol": "EP",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-EP",
+        "token1_symbol": "WETH",
+        "token2_symbol": "EP"
+    },
+    {
+        "pair": "RACA-USDT",
+        "token1_symbol": "RACA",
+        "token2_symbol": "USDT"
+    },
+    {
+        "pair": "USDT-RACA",
+        "token1_symbol": "USDT",
+        "token2_symbol": "RACA"
+    },
+    {
+        "pair": "MONGOOSE-WETH",
+        "token1_symbol": "MONGOOSE",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-MONGOOSE",
+        "token1_symbol": "WETH",
+        "token2_symbol": "MONGOOSE"
+    },
+    {
+        "pair": "MKR-WETH",
+        "token1_symbol": "MKR",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-MKR",
+        "token1_symbol": "WETH",
+        "token2_symbol": "MKR"
+    },
+    {
+        "pair": "USDC-fUSDC",
+        "token1_symbol": "USDC",
+        "token2_symbol": "fUSDC"
+    },
+    {
+        "pair": "fUSDC-USDC",
+        "token1_symbol": "fUSDC",
+        "token2_symbol": "USDC"
+    },
+    {
+        "pair": "XCAD-USDC",
+        "token1_symbol": "XCAD",
+        "token2_symbol": "USDC"
+    },
+    {
+        "pair": "USDC-XCAD",
+        "token1_symbol": "USDC",
+        "token2_symbol": "XCAD"
+    },
+    {
+        "pair": "BREED-WETH",
+        "token1_symbol": "BREED",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-BREED",
+        "token1_symbol": "WETH",
+        "token2_symbol": "BREED"
+    },
+    {
+        "pair": "WAIT-WETH",
+        "token1_symbol": "WAIT",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-WAIT",
+        "token1_symbol": "WETH",
+        "token2_symbol": "WAIT"
+    },
+    {
+        "pair": "FLX-WETH",
+        "token1_symbol": "FLX",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-FLX",
+        "token1_symbol": "WETH",
+        "token2_symbol": "FLX"
+    },
+    {
+        "pair": "KUMA-WETH",
+        "token1_symbol": "KUMA",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-KUMA",
+        "token1_symbol": "WETH",
+        "token2_symbol": "KUMA"
+    },
+    {
+        "pair": "RVST-WETH",
+        "token1_symbol": "RVST",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-RVST",
+        "token1_symbol": "WETH",
+        "token2_symbol": "RVST"
+    },
+    {
+        "pair": "UNCX-WETH",
+        "token1_symbol": "UNCX",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-UNCX",
+        "token1_symbol": "WETH",
+        "token2_symbol": "UNCX"
+    },
+    {
+        "pair": "gooch-WETH",
+        "token1_symbol": "gooch",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-gooch",
+        "token1_symbol": "WETH",
+        "token2_symbol": "gooch"
+    },
+    {
+        "pair": "DG-USDC",
+        "token1_symbol": "DG",
+        "token2_symbol": "USDC"
+    },
+    {
+        "pair": "USDC-DG",
+        "token1_symbol": "USDC",
+        "token2_symbol": "DG"
+    },
+    {
+        "pair": "WAGMIGAMES-WETH",
+        "token1_symbol": "WAGMIGAMES",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-WAGMIGAMES",
+        "token1_symbol": "WETH",
+        "token2_symbol": "WAGMIGAMES"
+    },
+    {
+        "pair": "AKITA-WETH",
+        "token1_symbol": "AKITA",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-AKITA",
+        "token1_symbol": "WETH",
+        "token2_symbol": "AKITA"
+    },
+    {
+        "pair": "VIDYA-WETH",
+        "token1_symbol": "VIDYA",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-VIDYA",
+        "token1_symbol": "WETH",
+        "token2_symbol": "VIDYA"
+    },
+    {
+        "pair": "F9-WETH",
+        "token1_symbol": "F9",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-F9",
+        "token1_symbol": "WETH",
+        "token2_symbol": "F9"
+    },
+    {
+        "pair": "MONKEYS-WETH",
+        "token1_symbol": "MONKEYS",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-MONKEYS",
+        "token1_symbol": "WETH",
+        "token2_symbol": "MONKEYS"
+    },
+    {
+        "pair": "MATIC-WETH",
+        "token1_symbol": "MATIC",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-MATIC",
+        "token1_symbol": "WETH",
+        "token2_symbol": "MATIC"
+    },
+    {
+        "pair": "kitty-WETH",
+        "token1_symbol": "kitty",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-kitty",
+        "token1_symbol": "WETH",
+        "token2_symbol": "kitty"
+    },
+    {
+        "pair": "SHIB-WETH",
+        "token1_symbol": "SHIB",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-SHIB",
+        "token1_symbol": "WETH",
+        "token2_symbol": "SHIB"
+    },
+    {
+        "pair": "K21-WETH",
+        "token1_symbol": "K21",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-K21",
+        "token1_symbol": "WETH",
+        "token2_symbol": "K21"
+    },
+    {
+        "pair": "imBTC-WETH",
+        "token1_symbol": "imBTC",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-imBTC",
+        "token1_symbol": "WETH",
+        "token2_symbol": "imBTC"
+    },
+    {
+        "pair": "SAV3-WETH",
+        "token1_symbol": "SAV3",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-SAV3",
+        "token1_symbol": "WETH",
+        "token2_symbol": "SAV3"
+    },
+    {
+        "pair": "LTX-WETH",
+        "token1_symbol": "LTX",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-LTX",
+        "token1_symbol": "WETH",
+        "token2_symbol": "LTX"
+    },
+    {
+        "pair": "DG-WETH",
+        "token1_symbol": "DG",
+        "token2_symbol": "WETH"
+    },
+    {
+        "pair": "WETH-DG",
+        "token1_symbol": "WETH",
+        "token2_symbol": "DG"
+    }
+]

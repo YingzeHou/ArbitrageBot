@@ -6,13 +6,13 @@ from dotenv import load_dotenv
 import json
 import time
 from tqdm import tqdm
+from uniswap_pair_fetch import fetch_uniswap_top_pairs, extract_and_format_tokens, convert_pairs, calculate_exchange_prices
 
 # Load environment variables from .env file
 load_dotenv()
 
 arbitrage_path = None
 arbitrage_ratio = None
-path_protocols = None
 
 def get_spot_price(asset_from, asset_to, state):
     """
@@ -114,6 +114,7 @@ def get_negative_cycle(G, node):
     cycles = find_all_cycles(G, node)
     for cycle in cycles:
         weight = sum(G[cycle[i]][cycle[i+1]]['weight'] for i in range(len(cycle)-1))
+        print(cycle, weight)
         if weight < best_weight:
             best_cycle = cycle
             best_weight = weight
@@ -140,11 +141,12 @@ def negative_cycle_arbitrage_detection(N, E, state, node):
             exchange_dict[src] = 1
 
         path = convert_cycle_to_path(cycle_dict[src])
-        revenue, ratio = calculate_revenue(path, G)
-        print(f'{path} ratio: {ratio}')
-        if ratio>exchange_dict[src]:
-            exchange_dict[src] = ratio
-            best_path = path
+        if path:
+            revenue, ratio = calculate_revenue(path, G)
+            print(f'{path} ratio: {ratio}')
+            if ratio>exchange_dict[src]:
+                exchange_dict[src] = ratio
+                best_path = path
 
     return exchange_dict, best_path
 
@@ -152,32 +154,21 @@ def fetch_price(from_token, to_token, api_key, token_dict):
     base_url = "https://api.1inch.dev/swap/v5.2/1/quote"
     headers = {'accept': 'application/json', 'Authorization': f'Bearer {api_key}'}
 
-    if from_token == 'WETH' or to_token == 'WETH':
-        params = {
-            "src": token_dict[from_token]['address'],
-            "dst": token_dict[to_token]['address'],
-            "amount": 1*10**int(token_dict[from_token]['decimal']),  # Example amount, typically 1 token
-            "protocols": 'UNISWAP_V2',
-            "includeTokensInfo": True,
-            "includeGas": True,
-            "includeProtocols": True
-        }
-    else:
-         params = {
-            "src": token_dict[from_token]['address'],
-            "dst": token_dict[to_token]['address'],
-            "amount": 1*10**int(token_dict[from_token]['decimal']),  # Example amount, typically 1 token
-            "protocols": 'BANCOR',
-            "includeTokensInfo": True,
-            "includeGas": True,
-            "includeProtocols": True
-        }
+    params = {
+        "src": token_dict[from_token]['address'],
+        "dst": token_dict[to_token]['address'],
+        "amount": 1*10**int(token_dict[from_token]['decimals']),  # Example amount, typically 1 token
+        "protocols": 'UNISWAP_V2',
+        "includeTokensInfo": True,
+        "includeGas": True,
+        "includeProtocols": True
+    }
 
     try:
         response = requests.get(base_url, headers=headers, params=params)
         if response.status_code==200:
             data = response.json()
-            return (from_token, to_token), (int(data['toAmount']) / (1*10**int(token_dict[to_token]['decimal']))), data['protocols'][0][0][0]['name']
+            return (from_token, to_token), (int(data['toAmount']) / (1*10**int(token_dict[to_token]['decimals']))), data['protocols'][0][0][0]['name']
         return (from_token, to_token), 0, "NOT EXIST"
     except Exception as e:
         print(f"Error with pair {from_token}-{to_token}: {e}")
@@ -195,18 +186,25 @@ def fetch_all_prices(token_pairs, api_key, token_dict, E):
         else:
             results[curr_dex] = curr_price
             protocols[curr_dex] = dex_protocol
-    return results, protocols
+    return results
 
 def find_arbitrage_opportunity(token_to_arbitrage):
-    global arbitrage_path, arbitrage_ratio, path_protocols
+    global arbitrage_path, arbitrage_ratio
     if arbitrage_path != None:
-        return arbitrage_path, arbitrage_ratio, path_protocols
+        return arbitrage_path, arbitrage_ratio
     api_key = os.getenv('ONEINCH_PRIVATE_KEY')  # Replace with your actual API key
     if not api_key:
         raise ValueError("Private key not set in .env file")
-    
-    tokens = json.load(open('./data/erc20_tokens.json'))
-    pairs =  json.load(open('./data/token_pairs.json'))
+
+    print('======================================= Fetch Uniswap Pairs =======================================')
+    top_pairs = fetch_uniswap_top_pairs()
+
+    print('======================================= Output Required Files =======================================')
+    extract_and_format_tokens(top_pairs, "./data/uniswap_auto_tokens.json")
+    convert_pairs(top_pairs, "./data/uniswap_auto_pairs.json")
+
+    tokens = json.load(open('./data/uniswap_auto_tokens.json'))
+    pairs =  json.load(open('./data/uniswap_auto_pairs.json'))
 
     N = []
     for token in tokens:
@@ -216,23 +214,22 @@ def find_arbitrage_opportunity(token_to_arbitrage):
     for pair in pairs:
         E.append((pair['token1_symbol'], pair['token2_symbol']))
 
-    initial_state, dex_protocols = fetch_all_prices(pairs, api_key, tokens, E)
-    # print(initial_state)
-    print(dex_protocols)
+    print('======================================= Initialize the Prices =======================================')
+    initial_state = calculate_exchange_prices(top_pairs)
+    time.sleep(1)
+    print('======================================= Start Finding Arbitrage Opportunity =======================================')
     exchange_dict, best_path = negative_cycle_arbitrage_detection(N, E, initial_state, token_to_arbitrage)
     arbitrage_path = best_path
     arbitrage_ratio =  exchange_dict[token_to_arbitrage]
 
-    best_path_protocols = []
-    for i in range(len(best_path)-1):
-        curr_key = (best_path[i], best_path[i+1])
-        best_path_protocols.append(dex_protocols[curr_key])
-
     best_token_path = []
     for node in best_path:
-        best_token_path.append((node, tokens[node]['address'], tokens[node]['decimal']))
-
-    path_protocols = best_path_protocols
+        best_token_path.append((node, tokens[node]['address'], tokens[node]['decimals']))
 
     arbitrage_path = best_token_path
-    return best_token_path, exchange_dict[token_to_arbitrage], best_path_protocols
+
+    print('======================================= Returning to API =======================================')
+    return best_token_path, exchange_dict[token_to_arbitrage]
+
+
+
