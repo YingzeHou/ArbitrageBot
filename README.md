@@ -8,15 +8,16 @@
 
 ### flask_src
 All backend algorithm logic happens here:
-- Python backend to retrieve market asset pair swap price information
+- Python backend to retrieve market asset pair swap price information, processed result is sent to endpoint `arbitrage-opportunities`
 - Build graph to apply **Bellman-Ford Algorithm** to find the optimal negative weight cycle to detect possible arbitrage opportunities for various kinds of assets
 - Implement an endpoint API that frontend can interact with to actually perform the arbitrage trading via smart contract
-- Current experiment is with **1inch API** with endpoints https://api.1inch.dev/swap/v5.2/1/quote for swap price retrieval
+- Current experiment is with **UniswapV2 Queries** with **GraphQL** for swap price retrieval
 
 ### hardhat_src
 All DeFi related trading behaviors happen here:
 - This is where DeFi transaction happens. Once backend alogrithm is implemented, JavaScript files can use `axios` to call backend API to retrieve trading operations needed, and trigger smart contract trades
 - It's the same framework as our Labs, which we are already familiar with and can ask questions if we encounter any. I believe TAs are familiar with this framework.
+- Navigate to this folder and use command `npx hardhat test` to run all-in-one test in local environment
 
 
 

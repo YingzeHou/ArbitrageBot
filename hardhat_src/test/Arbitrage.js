@@ -50,8 +50,6 @@ describe("Arbitrage", function () {
     // Simulate the arbitrage trade
     await arbitrageOperator.wrapEther({ gasPrice:0, value: ethers.utils.parseEther("0.0001") });
     await arbitrageOperator.operate(optimal_address_path, optimal_token_path, {gasPrice: 0, value: ethers.utils.parseEther("0.0001")});
-    // Add assertions to validate the outcome of the arbitrage simulation
-    // Example: expect(...).to.equal(...);
   });
 
 })

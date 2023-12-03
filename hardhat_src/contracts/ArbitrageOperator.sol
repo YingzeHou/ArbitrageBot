@@ -336,5 +336,7 @@ contract ArbitrageOperator{
         }
         console.log("End of Arbitrage");
         console.log("========================================================================================");
+        uint256 profit = weth.balanceOf(address(this)) - amountIn;
+        console.log("Profit: ", profit, "WETH");
     }
 }
